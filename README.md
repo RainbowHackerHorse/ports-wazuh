@@ -7,6 +7,13 @@ This is an attempt to port Wazuh to the FreeBSD Ports Tree.
 ## Why is your dir structure weird?
 I'm working with a skeleton layout of the Ports Tree to make my life easier. This won't all be here once it's accepted by the Ports Team.
 
+## Does this have any dependencies?
+So far, for build, I'e identified the following:
+* gmake
+* ngcc
+* readline
+* perl 5.24 (perl5 pkg)
+
 ## Other Stuff
 
 See below for original Wazuh README.md
