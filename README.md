@@ -10,7 +10,7 @@ I'm working with a skeleton layout of the Ports Tree to make my life easier. Thi
 ## Does this have any dependencies?
 So far, for build, I'e identified the following:
 * gmake
-* ngcc
+* gcc
 * readline
 * perl 5.24 (perl5 pkg)
 
