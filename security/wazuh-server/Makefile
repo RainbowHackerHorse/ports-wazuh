@@ -14,10 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=
 
+BUILD_DEPENDS= gmake:devel/gmake
 
-USES= gmake
-USES= gcc
 USES= readline
+USE_GCC= yes
 USE_OPENSSL= yes
 
 USERS=          ossec ossecm ossecr
@@ -25,6 +25,7 @@ GROUPS=         ossec
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	wazuh
+GH_TAGNAME=	v2.1.0
 
 IS_INTERACTIVE=	yes
 
@@ -32,6 +33,7 @@ WRKSRC=		${WRKDIR}/wazuh-${DISTVERSION}
 
 .if !defined(CLIENT_ONLY)
 OPTIONS_DEFINE=	MYSQL PGSQL
+OPTIONS_DEFAULT= MYSQL
 
 MYSQL_VARS=	WITH_DB=yes
 MYSQL_USE=	MYSQL=client
