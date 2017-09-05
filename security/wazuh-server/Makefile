@@ -14,9 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=
 
-BUILD_DEPENDS= gmake:devel/gmake
-
-USES= readline
+USES= readline gmake
 USE_GCC= yes
 USE_OPENSSL= yes
 
